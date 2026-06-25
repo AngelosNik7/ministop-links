@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Stop Express Linopetra</title>
+  <meta name="description" content="Order from Mini Stop Express Linopetra through Wolt, Foody or the Mini Stop Express app." />
+  <style>
+    :root {
+      --green: #0f7a3a;
+      --dark-green: #085829;
+      --yellow: #ffd23f;
+      --cream: #fff8e6;
+      --dark: #122017;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background:
+        radial-gradient(circle at top left, rgba(255,210,63,.38), transparent 32%),
+        linear-gradient(135deg, var(--cream) 0%, #f6fff6 45%, #eaf8ee 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 520px;
+      text-align: center;
+    }
+
+    .logo-box {
+      background: var(--white);
+      border: 3px solid var(--green);
+      border-radius: 28px;
+      padding: 22px 18px 18px;
+      box-shadow: 0 18px 45px rgba(8, 88, 41, .14);
+      margin-bottom: 22px;
+    }
+
+    .mini-logo {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .mini-logo .mini {
+      font-weight: 900;
+      font-size: clamp(36px, 10vw, 58px);
+      color: var(--green);
+      text-transform: uppercase;
+    }
+
+    .mini-logo .stop {
+      font-weight: 900;
+      font-size: clamp(36px, 10vw, 58px);
+      color: var(--yellow);
+      text-transform: uppercase;
+      text-shadow: 2px 2px 0 var(--dark-green);
+    }
+
+    .mini-logo .express {
+      margin-top: 4px;
+      background: var(--green);
+      color: var(--white);
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 7px 18px;
+      font-size: clamp(14px, 4vw, 20px);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0 6px;
+      font-size: 25px;
+      color: var(--dark-green);
+    }
+
+    p {
+      margin: 0;
+      font-size: 15px;
+      color: #4b5d50;
+    }
+
+    .links {
+      display: grid;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      text-decoration: none;
+      color: var(--dark);
+      background: rgba(255,255,255,.95);
+      border: 2px solid rgba(15,122,58,.16);
+      border-radius: 22px;
+      padding: 18px 20px;
+      box-shadow: 0 12px 28px rgba(8, 88, 41, .10);
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+
+    .card:hover,
+    .card:focus {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 34px rgba(8, 88, 41, .18);
+      border-color: var(--green);
+      outline: none;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+    }
+
+    .icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 17px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-weight: 900;
+      font-size: 20px;
+      flex: 0 0 auto;
+    }
+
+    .wolt { background: #00a9e0; }
+    .foody { background: #ff4f00; }
+    .play { background: #111; font-size: 26px; }
+
+    .brand-title {
+      display: block;
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 3px;
+      font-size: 13px;
+      color: #607166;
+    }
+
+    .arrow {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--yellow);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      color: var(--dark-green);
+      flex: 0 0 auto;
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: #607166;
+      font-size: 13px;
+    }
+
+    @media (max-width: 420px) {
+      body { padding: 18px; }
+      .card { padding: 15px; border-radius: 19px; }
+      .icon { width: 52px; height: 52px; }
+      .brand-title { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="logo-box" aria-label="Mini Stop Express">
+      <div class="mini-logo">
+        <span class="mini">Mini</span>
+        <span class="stop">Stop</span>
+        <span class="express">Express</span>
+      </div>
+      <h1>Mini Stop Express Linopetra</h1>
+      <p>Order online quickly through your favourite platform.</p>
+    </section>
+
+    <section class="links" aria-label="Order links">
+      <a class="card" href="https://wolt.com/el/cyp/limassol/venue/mini-stop-express-linopetra" target="_blank" rel="noopener noreferrer">
+        <span class="brand">
+          <span class="icon wolt">W</span>
+          <span><span class="brand-title">Wolt</span><span class="brand-subtitle">Order with Wolt</span></span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="card" href="https://foody.com.cy/delivery/lemesos/mini-stop-express-linopetra" target="_blank" rel="noopener noreferrer">
+        <span class="brand">
+          <span class="icon foody">F</span>
+          <span><span class="brand-title">Foody</span><span class="brand-subtitle">Order with Foody</span></span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.foodbooking.ministopexpress" target="_blank" rel="noopener noreferrer">
+        <span class="brand">
+          <span class="icon play">▶</span>
+          <span><span class="brand-title">Google Play</span><span class="brand-subtitle">Download the app</span></span>
+        </span>
+        <span class="arrow">›</span>
+      </a>
+    </section>
+
+    <div class="footer">Open 24/7 • Fast delivery • Mini Stop Express</div>
+  </main>
+</body>
+</html>
